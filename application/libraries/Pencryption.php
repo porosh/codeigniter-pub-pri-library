@@ -21,7 +21,6 @@ class Pencryption {
                 }
             }
             
-
             $publicKeyPath = $destinationPath.'/public.key';
             $privateKeyPath = $destinationPath.'/private.key';
 
@@ -123,10 +122,6 @@ class Pencryption {
         // Uncompress the unencrypted data.
         $output = gzuncompress($output);
     }
-
-    
-
-
 
     private function writeToFile($filename){
         if (is_writable($filename)) {
